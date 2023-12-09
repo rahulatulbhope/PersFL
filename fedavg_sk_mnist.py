@@ -83,8 +83,8 @@ import sys
 import random
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-how_many_parts = 0#int(sys.argv[1])
-alpha = 0#float(sys.argv[2])
+how_many_parts = int(sys.argv[1])
+alpha = float(sys.argv[2])
 #(X_train, y_train, X_test, y_test, net_dataidx_map, traindata_cls_counts) = partition_data('cifar10','/Users/rahulbhope/Documents/rahul_code/cifar','/Users/rahulbhope/Documents/rahul_code/cifar','hetero-dir',100,alpha=alpha)
 #train_dl, test_dl = get_dataloader('cifar10', '/Users/rahulbhope/Documents/rahul_code/cifar', 8, 8, dataidxs=net_dataidx_map[1])
 how_many_clients = 50
